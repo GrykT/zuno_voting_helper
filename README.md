@@ -2,7 +2,7 @@
 mixi大喜利頭脳の投票ヘルパー
 ## インストール
 各ブラウザでユーザースクリプト拡張機能を追加し、そこにここに置いてあるスクリプトを丸まるコピーして保存してください。
-[ここ](https://raw.githubusercontent.com/GrykT/zuno_voting_helper/master/zuno_pointdisp.js)ね。
+[ここ](https://raw.githubusercontent.com/GrykT/zuno_voting_helper/master/zuno_voting_helper.js)ね。
 最近はどのブラウザも[TemplateMonkey](http://www.tampermonkey.net/)使っとけば大丈夫みたいです。
 
 IEは無理だと思う。あとスマホアプリにも対応できません。スマホのブラウザも無理。PCから使ってくれ。
