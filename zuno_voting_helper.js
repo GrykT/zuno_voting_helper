@@ -345,11 +345,11 @@ const buildVoteText = () => {
     } else {
         if(withNeta) {
             netaData.filter(neta => neta.checked).forEach(neta => {
-                vote += `${neta.commentNo}:${neta.userName}さん\r\n${neta.neta}\r\n\r\n`
+                vote += `${neta.commentNo}：${neta.userName}さん\r\n${neta.neta}\r\n\r\n`
             })
         } else {
             netaData.filter(neta => neta.checked).forEach(neta => {
-                vote += `${neta.commentNo}:${neta.userName}さん\r\n`
+                vote += `${neta.commentNo}：${neta.userName}さん\r\n`
             })
         }
     }
