@@ -364,7 +364,7 @@ const setResult = () => {
     come.scrollIntoView({behavior: "auto", block: "end", inline: "nearest"});
 }
 
-const duringVoting = () => { document.getElementsByClassName('COMMUNITY_cardBlockHeader__bbsTitleTopic')[0].innerText.include('（審査中）') }
+const duringVoting = () => { return document.getElementsByClassName('COMMUNITY_cardBlockHeader__bbsTitleTopic')[0].innerText.include('（審査中）') }
 
 const removeKakko = s => { return s.replace("[","").replace("]","") }
 const compareNo = (a, b) => parseInt(removeKakko(a)) < parseInt(removeKakko(b))
