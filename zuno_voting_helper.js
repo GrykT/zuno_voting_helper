@@ -36,6 +36,9 @@ let maxVote = 0
 // エントリポイント
 class Zuno {
     constructor() {
+        if(!duringVoting()) return
+
+
         let baseElm = createBase()
         let ctlPanel = createParts()
         baseElm.appendChild(ctlPanel)
@@ -360,6 +363,8 @@ const setResult = () => {
     come.value = buildVoteText()
     come.scrollIntoView({behavior: "auto", block: "end", inline: "nearest"});
 }
+
+const duringVoting = () => { document.getElementsByClassName('COMMUNITY_cardBlockHeader__bbsTitleTopic')[0].innerText.include('（審査中）') }
 
 const removeKakko = s => { return s.replace("[","").replace("]","") }
 const compareNo = (a, b) => parseInt(removeKakko(a)) < parseInt(removeKakko(b))
