@@ -61,7 +61,7 @@ const createBase = () => {
     // baseElm.style.height = '60%'
     baseElm.style.fontSize = '14px'
     baseElm.style.position = 'fixed'
-    baseElm.style.top = '100px'
+    baseElm.style.top = '80px'
     baseElm.style.right = '5px'
     baseElm.style.display = 'flex'
     baseElm.style.border = 'solid navy 2px'
@@ -201,7 +201,7 @@ const odaiSetting = () => {
     // お題位置を固定
     const odai = getComCardBlockBody(document)
     odai.style.position = 'fixed'
-    odai.style.top = '100px'
+    odai.style.top = '80px'
     odai.style.left = '3%'
     odai.style.maxHeight = '300px'
     odai.style.width = '60%'
@@ -364,7 +364,7 @@ const setResult = () => {
     come.scrollIntoView({behavior: "auto", block: "end", inline: "nearest"});
 }
 
-const duringVoting = () => { return document.getElementsByClassName('COMMUNITY_cardBlockHeader__bbsTitleTopic')[0].innerText.include('（審査中）') }
+const duringVoting = () => { return document.getElementsByClassName('COMMUNITY_cardBlockHeader__bbsTitleTopic')[0].innerText.include('審査中') }
 
 const removeKakko = s => { return s.replace("[","").replace("]","") }
 const compareNo = (a, b) => parseInt(removeKakko(a)) < parseInt(removeKakko(b))
